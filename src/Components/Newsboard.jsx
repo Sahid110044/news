@@ -26,9 +26,9 @@ function Newsboard() {
     const [loading,setloading] = useState(true)
     
     
-
-    const url = `https://newsapi.org/v2/everything?q=${category}&from=2024-12-03&sortBy=publishedAt&apiKey=174bf818dc7345c2ab1cb383321760a5`
+    
     // const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${import.meta.env.VITE_api_key}`
+      const url = `https://gnews.io/api/v4/search?q=${category}&lang=en&country=us&max=10&apikey=${import.meta.env.VITE_api_key}`
     
 
       useEffect(()=>{
