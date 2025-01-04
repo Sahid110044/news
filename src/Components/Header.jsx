@@ -30,17 +30,17 @@ function Header({setcategory,category,handlformsubmit,input,setinput}) {
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
        
         <li className="nav-item">
-          <NavLink to='/newsboard' onClick={()=>setcategory("general")} className='nav-link'>Newsboard</NavLink>
+          <NavLink to='/' onClick={()=>setcategory("general")} className='nav-link'>Newsboard</NavLink>
         </li>
         
         <li className="nav-item">
-          <NavLink to='/newsboard' className="nav-link" onClick={()=>setcategory("business")} >Business News</NavLink>
+          <NavLink to='/' className="nav-link" onClick={()=>setcategory("business")} >Business News</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to='/newsboard' onClick={()=>setcategory("health")} className="nav-link ">Health News</NavLink>
+          <NavLink to='/' onClick={()=>setcategory("health")} className="nav-link ">Health News</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to='/newsboard' onClick={()=>setcategory("sports")} className="nav-link ">Sports News</NavLink>
+          <NavLink to='/' onClick={()=>setcategory("sports")} className="nav-link ">Sports News</NavLink>
         </li>
         
       </ul>
