@@ -33,10 +33,12 @@ function Newsboard() {
 
       useEffect(()=>{
       const fetchapi = async()=> {
+        setloading(true)
          if(apidata[category]){
           console.log("i am using cached data")
           setloading(false)
          }
+
           try{
             const response = await fetch(url)
                                                        if(!response.ok) throw new Error(`shahid api is corrupted ${response.status}`)
@@ -52,7 +54,7 @@ function Newsboard() {
           }
         }
         fetchapi();
-      },[url,debouncing])
+      },[url,debouncing,category])
 
 
 
