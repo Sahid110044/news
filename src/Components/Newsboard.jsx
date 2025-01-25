@@ -15,7 +15,7 @@ function Newsboard() {
       const handler = setTimeout(()=>{
         setdebouncing(category)
         console.log("Debounce category:",category)
-      },500);
+      },1000);
       return ()=> clearTimeout(handler);
     },[category])
 //---------------------------------------------------------------------------
@@ -32,6 +32,7 @@ function Newsboard() {
     
 
       useEffect(()=>{
+
       const fetchapi = async()=> {
         setloading(true)
          if(apidata[category]){
@@ -54,6 +55,7 @@ function Newsboard() {
           }
         }
         fetchapi();
+
       },[url,debouncing,category])
 
 
